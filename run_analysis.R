@@ -11,6 +11,8 @@
 
 run_analysis <-function() {
   
-  
-  
+  train=read.table("X_train.txt")
+  test=read.table("X_test.txt")
+  mergedData=merge(train,test,all=TRUE)
+  head(mergedData)
 }
