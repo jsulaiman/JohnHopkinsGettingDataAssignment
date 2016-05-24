@@ -9,10 +9,12 @@
 # Appropriately labels the data set with descriptive variable names.
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-run_analysis <-function() {
-  
-  train=read.table("X_train.txt")
-  test=read.table("X_test.txt")
+#run_analysis <-function() {
+
+  setwd("P:/Personal/Study/Coursera/Cleaning Data/JohnHopkinsGettingDataAssignment")
+  print("Hi",)
+  train=read.table("train/X_train.txt")
+  test=read.table("test/X_test.txt")
   mergedData=merge(train,test,all=TRUE)
-  head(mergedData)
-}
+  print(head(mergedData),)
+#}
